@@ -65,6 +65,7 @@ button:active,
 button:hover {
   background-color: inherit;
   color: inherit;
+  border-style: inset;
 }
 
 /* Mobile Styles */
