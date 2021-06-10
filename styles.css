@@ -58,6 +58,7 @@ button {
   margin-left: -10%;
   inline-size: 8rem;
   font-family: 'Lexend Deca', sans-serif;
+  border-style: none;
 }
 
 button:active,
