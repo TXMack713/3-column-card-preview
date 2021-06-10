@@ -37,6 +37,7 @@ h4,
 h5,
 h6 {
   font-family: 'Big Shoulders Display', cursive;
+  background: hsl(0, 0% 95%);
 }
 
 .sedan {
@@ -61,6 +62,10 @@ button {
   border-style: none;
 }
 
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
 button:active,
 button:hover {
   background-color: inherit;
@@ -81,7 +86,6 @@ button:hover {
   }
   div {
     padding: 5vh;
-    
   }
   button {
     /* margin-left: 0.0625rem; */
