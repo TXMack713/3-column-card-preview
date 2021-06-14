@@ -121,23 +121,27 @@ button:hover {
     block-size: 100vh;
     justify-content: center;
   }
+
   div {
     padding: 5vh;
   }
+
   button {
-    /* margin-left: 0.0625rem; */
     margin: 0;
     padding: 1rem 0.333rem;
     inline-size: 8rem;
   }
+
   .sedan {
     grid-column: 1;
     grid-row: 1;
   }
+
   .suv {
     grid-column: 1;
     grid-row: 2;
   }
+
   .luxury {
     grid-column: 1;
     grid-row: 3;
@@ -197,10 +201,12 @@ button:hover {
     border-top-left-radius: 0.667rem;
     border-bottom-left-radius: 0.667rem;
   }
+
   .suv {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
+
   .luxury {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
