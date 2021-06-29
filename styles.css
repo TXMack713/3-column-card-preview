@@ -90,11 +90,11 @@ h6 {
 
 button {
   background: hsl(0, 0% 95%);
-  border-radius: 30px;
-  padding: 5px;
+  border-radius: 2rem;
+  padding: 0.333rem;
   margin: 7.5% 0;
-  /* margin-left: -10%; */
   inline-size: 8rem;
+  block-size: 3rem;
   font-family: 'Lexend Deca', sans-serif;
   border-style: none;
 }
@@ -111,58 +111,66 @@ button:hover {
 }
 
 /* Mobile Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     margin: 0;
     padding: 0;
-    block-size: 100vh;
+    block-size: 100%;
     justify-content: center;
   }
+
   div {
     padding: 5vh;
   }
+
   button {
-    /* margin-left: 0.0625rem; */
     margin: 0;
-    padding: 15px 5px;
-    inline-size: 8rem;
+    padding: 1rem 0.333rem;
   }
+
   .sedan {
     grid-column: 1;
     grid-row: 1;
   }
+
   .suv {
     grid-column: 1;
     grid-row: 2;
   }
+
   .luxury {
     grid-column: 1;
     grid-row: 3;
   }
 }
 
-/* Desktop Stles */
-@media screen and (min-width: 601px) {
+/* Desktop Styles */
+@media screen and (min-width: 40.01em) {
+  body {
+    height: 100%;
+  }
   .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    margin: 0;
+    grid-template-columns: 3% 28% 28% 28% 3%;
+    grid-template-rows: 20% 60% 20%;
+    margin: 0 auto;
     padding: 0;
-    block-size: 100vh;
+    block-size: 100%;
     justify-content: center;
     align-content: center;
+    overflow: auto;
+    max-inline-size: 1440px;
   }
 
   div {
-    padding: 3rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    block-size: 60vh;
+    grid-template-rows: repeat(7, 1fr);
+    block-size: 100%;
   }
 
   img {
@@ -179,25 +187,31 @@ button:hover {
   p {
     align-self: center;
     grid-column: 1;
-    grid-row: 3 / 5;
+    grid-row: 3 / 6;
   }
 
   button {
-    margin-left: 5%;
+    margin-left: 2%;
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 7;
   }
 
   .sedan {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    border-top-left-radius: 0.667rem;
+    border-bottom-left-radius: 0.667rem;
   }
+
   .suv {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
   }
+
   .luxury {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+    border-top-right-radius: 0.667rem;
+    border-bottom-right-radius: 0.667rem;
   }
 }
