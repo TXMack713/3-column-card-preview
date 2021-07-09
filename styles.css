@@ -108,8 +108,10 @@ button:hover {
   border-style: inset;
 }
 
-footer {
+.attribution {
+  color: black;
     inline-size: 100%;
+  align-self: center;
   }
 
 /* Mobile Styles */
