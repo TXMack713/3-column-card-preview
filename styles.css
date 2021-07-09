@@ -108,18 +108,12 @@ button:hover {
   border-style: inset;
 }
 
-.attribution {
-  color: black;
-    inline-size: 100%;
-  align-self: center;
-  }
-
 /* Mobile Styles */
 @media screen and (max-width: 40em) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) 0.25fr;
     margin: 5%;
     padding: 0;
     block-size: 100%;
@@ -153,6 +147,15 @@ button:hover {
     border-bottom-left-radius: 0.667rem;
     border-bottom-right-radius: 0.667rem;
   }
+
+  .attribution {
+    grid-row: 4;
+    grid-column: 1;
+    margin: auto 0;
+    color: black;
+    inline-size: 100%;
+    text-align: center;
+  }
 }
 
 /* Desktop Styles */
@@ -164,7 +167,7 @@ button:hover {
   .container {
     display: grid;
     grid-template-columns: 12.5% 25% 25% 25% 12.5%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 17.5% 60% 17.5% 5%;
     margin: 0 auto;
     padding: 0;
     block-size: 100%;
@@ -222,5 +225,14 @@ button:hover {
     grid-row: 2 / 3;
     border-top-right-radius: 0.667rem;
     border-bottom-right-radius: 0.667rem;
+  }
+
+  .attribution {
+    grid-row: 4;
+    grid-column: 1 / 6;
+    margin: auto;
+    color: black;
+    inline-size: 100%;
+    text-align: center;
   }
 }
