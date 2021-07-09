@@ -108,6 +108,10 @@ button:hover {
   border-style: inset;
 }
 
+footer {
+    inline-size: 100%;
+  }
+
 /* Mobile Styles */
 @media screen and (max-width: 40em) {
   .container {
