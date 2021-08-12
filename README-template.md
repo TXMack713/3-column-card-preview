@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![file:///home/txmack713/Downloads/FireShot/FireShot%20Capture%20002%20-%20Frontend%20Mentor%20-%203-column%20preview%20card%20component%20-%20127.0.0.1.png]
+[file:///home/txmack713/Downloads/FireShot/FireShot%20Capture%20002%20-%20Frontend%20Mentor%20-%203-column%20preview%20card%20component%20-%20127.0.0.1.png]
 
 ### Links
 
